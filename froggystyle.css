@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    aspect-ratio: 1;
+}
+
+
+h1 {
+    max-width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    border-radius: 7px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #a78585;
+    transition: 0.5s;
+}
+
+/* h1:hover {
+    
+    color: pink;
+    background-color: black;
+} */
+
+
+img {
+  display: block;
+  max-width: 95%;
+  max-height: 75%;
+  height: 350px;
+  width: 500px;
+  margin: 10px;
+  border-radius: 14px;
+  transition: 1s;
+  
+    /* height: auto; */
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: pink; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(221, 111, 111); /* Add a dark-grey background on hover */
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+      
+    }
+  }
